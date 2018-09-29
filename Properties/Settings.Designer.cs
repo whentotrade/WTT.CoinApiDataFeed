@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WTT.CryptoDataFeed.Properties {
+namespace WTT.CoinApiDataFeed.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.1.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.8.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,30 +26,18 @@ namespace WTT.CryptoDataFeed.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("USD")]
-        public string BaseSymbol {
+        public string ApiKey {
             get {
-                return ((string)(this["BaseSymbol"]));
+                return ((string)(this["ApiKey"]));
             }
             set {
-                this["BaseSymbol"] = value;
+                this["ApiKey"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("CCCAGG")]
-        public string Exchange {
-            get {
-                return ((string)(this["Exchange"]));
-            }
-            set {
-                this["Exchange"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://streamer.cryptocompare.com/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("wss://ws.coinapi.io/v1/")]
         public string WebSocket {
             get {
                 return ((string)(this["WebSocket"]));
@@ -61,7 +49,7 @@ namespace WTT.CryptoDataFeed.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://min-api.cryptocompare.com/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://rest.coinapi.io/")]
         public string APIUrl {
             get {
                 return ((string)(this["APIUrl"]));

@@ -1,36 +1,34 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Diagnostics;
+using System.Windows.Forms;
+using WTT.CoinApiDataFeed.Properties;
 
-namespace WTT.CryptoDataFeed
+namespace WTT.CoinApiDataFeed
 {
     public partial class ctlLogin : UserControl
     {
-        public string BaseSymbol
-        {
-            get { return txtBaseSymbol.Text.Trim(); }
-        }
-
-        public string Exchange
-        {
-            get { return txtExchange.Text.Trim(); }
-        }
-
         public ctlLogin()
         {
             InitializeComponent();
         }
 
-        private void ctlLogin_Load(object sender, System.EventArgs e)
+        public string ApiKey => txtApiKey.Text.Trim();
+
+        private void ctlLogin_Load(object sender, EventArgs e)
         {
-            txtBaseSymbol.Text = Properties.Settings.Default.BaseSymbol;
-            txtExchange.Text = Properties.Settings.Default.Exchange;
+            txtApiKey.Text = Settings.Default.ApiKey;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             // Navigate to a URL.
-            System.Diagnostics.Process.Start("https://www.cryptocompare.com/api/#");
+            Process.Start("https://docs.coinapi.io/");
         }
 
-      
+        private void formatLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Navigate to a URL.
+            Process.Start("https://www.coinapi.io/integration");
+        }
     }
 }
