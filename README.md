@@ -1,5 +1,5 @@
 # CoinAPI.io WhenToTrade Datafeed  
-Datafeed source library for the CoinAPI.io integration to use with WhenToTrade Charting and Cycles platform
+Datafeed source library for the CoinAPI.io integration to use with WhenToTrade Charting and Cycle analysis platform
 
 ### Setup
 - Requires a free API key from CoinAPI.io
