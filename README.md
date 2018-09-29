@@ -1,4 +1,5 @@
-# WTT-Datafeeds
-Datafeed source library for the WhenToTrade Charting application
+# WhenToTrade Charting Platform Datafeed CoinAPI.io
+Datafeed source library for the CoinAPI.io integration
 
-BETA 2
+Build and copy the output into a seperate folder in your WTT charting application datafeed folder
+e.g. c:/WTT/DataFeeds
