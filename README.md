@@ -26,3 +26,8 @@ c:\WTT\DataFeeds\[Move the folder here]
  - [Free API Key]: Register free account
  - [Scope of Data]: Current API integration scope
   
+  [Book]: <http://a.co/d/i9YlX4c>
+  [Charting Platform]: <https://www.whentotrade.com>
+  [CoinAPI Documentation]: <https://docs.coinapi.io/#introduction>
+  [Free API key]: <https://www.coinapi.io/pricing>
+  [Scope of Data]: <https://www.coinapi.io/integration>
