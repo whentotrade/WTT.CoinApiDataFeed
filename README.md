@@ -8,7 +8,7 @@ Datafeed source library for the CoinAPI.io integration to use with WhenToTrade C
 - Restart WTT charting app and select new datafeed **CoinApi** from WTT login dropdown
 
 ### How to write my own datafeed integration?
-Just use this repository as template. Change and connect to the datafeed of your choice. Rename the repository and copy the build output into the WTT installation folder like this repository. There are no limits!
+Use this repository as template. Change and connect to the datafeed of your choice. Rename the repository and copy the build output into the WTT installation folder like this repository. There are no limits!
 
 
 ### References
