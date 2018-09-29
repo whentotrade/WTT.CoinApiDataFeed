@@ -3,7 +3,7 @@ Datafeed source library for the CoinAPI.io integration to use with WhenToTrade C
 
 ### Setup
 - Requires a free API key from CoinAPI.io
-- Compile library or download pre-build library **WTT.CoinApiDataFeed.zip** from release page 
+- Compile library or download pre-build library **WTT.CoinApiDataFeed.zip** from [release page] 
 - Copy complete build folder **WTT.CoinApiDataFeed** into local installation path c:\wtt\datafeeds
 - Restart WTT charting app and select new datafeed **CoinApi** from WTT login dropdown
 
@@ -33,3 +33,4 @@ c:\WTT\DataFeeds\[Move the folder here]
   [CoinAPI Documentation]: <https://docs.coinapi.io/#introduction>
   [Free API key]: <https://www.coinapi.io/pricing>
   [Scope of Data]: <https://www.coinapi.io/integration>
+  [release page]: <https://github.com/whentotrade/WTT.CoinApiDataFeed/releases>
