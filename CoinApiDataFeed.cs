@@ -152,8 +152,8 @@ namespace WTT.CoinApiDataFeed
                         BrodcastQuote(priceUpate);
 
                         //Debug only
-                        FireConnectionStatus(priceUpate.Symbol + ": " + priceUpate.Price + " Time: " +
-                                             priceUpate.TradeTime);
+                        //FireConnectionStatus(priceUpate.Symbol + ": " + priceUpate.Price + " Time: " +
+                        //                     priceUpate.TradeTime);
                         break;
 
                     case "error":
@@ -462,7 +462,7 @@ namespace WTT.CoinApiDataFeed
             var retBars = new List<BarData>();
             foreach (var set in datasets)
             {
-                List<BarData> _retBars = FromOHLCVBars(set);
+                IEnumerable<BarData> _retBars = FromOHLCVBars(set);
 
                 foreach (var newbar in _retBars)
                 {
@@ -487,7 +487,7 @@ namespace WTT.CoinApiDataFeed
         }
 
         //...Convert bar data message from API to internal bar data object
-        private List<BarData> FromOHLCVBars(dynamic records)
+        private IEnumerable<BarData> FromOHLCVBars(dynamic records)
         {
             var count = ((ICollection) records).Count;
 
